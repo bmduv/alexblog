@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Alex's Blog!
 ---
 
 This is a blank Quartz installation.
