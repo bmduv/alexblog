@@ -1,0 +1,55 @@
+
+- EMG Features extracted from three domains - time domain (TD), frequency domain (FD), and time-frequency domain (TFD)
+- Response time of gesture recognition needs to be short/fast to be perceived as real-time:
+	- feature extraction takes additional time -> but using time domain as itself requires no additional processing and reduces total response time
+- TD:
+	- fast and easy to implement since they don't require additional processing/transformation (raw EMG signal)
+	- previous evidence that they show transient state of gestures well
+	- prone to errors due to non-stationarity of EMG signals
+- SVM, KNN, ANN, CNN, PNN classification models have shown at least 90% accuracy in classifying four-ten hand/finger gestures -> but still dealing with high accuracy/low response time challenge
+- Overview
+	- fixed electrode placement using only TD features employing ANN, SVM, RF, and LR
+	- three different muscles on forearm + six TD features extracted from each channel = 18 TD features as input data
+- Time-domain Features:
+	- Root Mean Square
+	- Variance
+	-  Mean Absolute Value
+	- Slop Sign Change
+	- Zero Crossing
+	- Waveform Length
+- Stratified ten-fold cross-validation grid search for parameter tuning
+- Statistical Analysis of performance:
+	- Mean and SD of accuracies of all subjects used (since each model was trained on individual's separate data)
+	- one-way analysis of variance (ANOVA) with Games-Howell post-hoc tests for accuracy evaluation
+	- variance of accuracies of different machine learning methods evaluated using F-tests with false discovery rate correction
+
+
+## EMG Signal Preprocessing:
+- EMG signals can get noise from movement artifacts or electrical interference. 
+	- filtering techniques to remove such noise is crucial for preprocessing and better performance of models
+- Wavelet analysis
+	- wavelet de-noising (can efficiently eliminate white Gaussian noise)
+- Higher order statistics
+- Empirical mode decomposition
+- ANN
+- Independent component analysis
+
+## EMG ML Pattern Recognition:
+- Support Vector Machine:
+	- Supervised algorithm for classification tasks, learns to fit a hyperplane most suitable for classifying different classes in feature space -> shown improved accuracy for predicting knee angles and recognizing finger movements
+- Artificial Neural Networks:
+	- Has been used for recognizing hand gesture
+- K-Nearest Neighbors:
+	- Unsupervised method that groups data points according to majority class of its closest neighbors   -> classify EMG signals based on how closely they resemble previously identified patterns.
+- Random Forest:
+	- Unsupervised Ensemble Learning in which several decision trees' predictions are combined to increase robustness and generalization (noise resistance)
+- Hidden Markov Model:
+	- System with unobservable states represented by HMM statistical model -> useful where sequence of muscle activations are crucial since they are used to identify temporal patterns in EMG signals.
+- Convolutional Neural Network:
+	- Used to extract features for time-frequency representations
+- Long Short-term Memory Networks:
+	- Useful for temporal pattern analysis (RNN)
+- Extreme Learning Machines:
+	- Feedforward neural network with single hidden layer that chooses hidden layer weights at random    -> provides strong generalization and quick learning
+- Linear Discriminant Analysis:
+	- Unsupervised method used to identify linear feature combination in the feature space that best divide various classes

@@ -1,6 +1,6 @@
 ---
 title: Fundamentals of CNN
-draft: false
+draft: true
 tags:
 ---
  Discrete convolution is a linear transformation that preserves the notion of ordering, it is sparse (only few input units contribute to given output unit) and reuses parameters (same weights applied to multiple locations in the input) $\rightarrow$ A kernel slides across the input feature map. At each location, product between each element of the kernel and input element it overlaps is computed and the results are summed up to obtain the output in the current location. If there are multiple feature maps (i.e. R.G.B.), the kernel will have to be 3-dimensional / each one of the feature maps will be  convolved with a distinct kernel - and the resulting feature maps will be summed up elementwise to produce the output feature map. 

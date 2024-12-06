@@ -1,4 +1,4 @@
 ---
-title: "Welcome!👋"
+title: Welcome!👋
 tags:
 ---

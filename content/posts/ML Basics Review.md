@@ -85,7 +85,7 @@ $$
 ## Elastic Net Regularization
 Elastic Net Regularization is a combination of L1 and L2 regularization, it addresses limitations of each technique by taking a compromise between feature selection (L1) and parameter shrinkage (L2).
 $$
-J_{reg} = J + α * \{λ * L1(w) + (1 — λ) * L2(w)\}
+J_{reg} = J + α * \{λ * L1(w) + (1 - λ) * L2(w)\}
 $$
 ## Regression Models
 The goal of regression is to predict a continuous, numerical value. This can be defined as finding a function f(x) that maps an input feature vector x to a continuous output value y, where y is a real number. Regression can be considered a discriminative model as it focuses on predicting numerical values based on input features.
@@ -161,13 +161,13 @@ A popular algorithm used for binary classification, it models the relationships 
   - The hypothesis of Logistic Regression is given by:
 $$
 \begin{gathered}
-hθ(x) = σ(θᵀx) \\\\
-\text{Where } hθ(x) \text{ represents the predicted probability of the  target variable } \\ \text{in class 1 for the input feature vector x, with θ  being the weights}
+h\theta(x) = \sigma(\theta^tx) \\\\
+\text{Where } h\theta(x) \text{ represents the predicted probability of the  target variable } \\ \text{in class 1 for the input feature vector x, with } \theta \text{ being the weights}
 \end{gathered}
 $$
   - Cost Function:
 $$
 \begin{gathered}
-J(θ) = -(\frac{1}{m}) * \sum_{i=1}^{m}[y_i * log(hθ(x_i)) + (1-y_i) * log(1-hθ(x_i))]
+J(\theta) = -(\frac{1}{m}) * \sum_{i=1}^{m}[y_i * log(h\theta(x_i)) + (1-y_i) * log(1-h\theta(x_i))]
 \end{gathered}
 $$
