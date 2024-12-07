@@ -1,4 +1,3 @@
-
 - EMG Features extracted from three domains - time domain (TD), frequency domain (FD), and time-frequency domain (TFD)
 - Response time of gesture recognition needs to be short/fast to be perceived as real-time:
 	- feature extraction takes additional time -> but using time domain as itself requires no additional processing and reduces total response time
@@ -22,7 +21,6 @@
 	- Mean and SD of accuracies of all subjects used (since each model was trained on individual's separate data)
 	- one-way analysis of variance (ANOVA) with Games-Howell post-hoc tests for accuracy evaluation
 	- variance of accuracies of different machine learning methods evaluated using F-tests with false discovery rate correction
-
 
 ## EMG Signal Preprocessing:
 - EMG signals can get noise from movement artifacts or electrical interference. 
