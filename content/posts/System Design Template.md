@@ -11,7 +11,7 @@ tags:
 5. Evaluation
 6. Deployment and serving
 7. Monitoring and infrastructure
-![[public/posts/imgs/ch1-02-5AHN2LDX.webp]]
+![[posts/imgs/ch1-02-5AHN2LDX.webp]]
 ## Clarifying Requirements
 - Business Objective
 - Features the system needs to support
@@ -31,12 +31,12 @@ tags:
 ## Data preparation
 - Data Sources: Who collected it? How clean is data?
 - Data Storage
-![[public/posts/imgs/ch1-07-IWLEAUDN.webp]]
+![[posts/imgs/ch1-07-IWLEAUDN.webp]]
 - Extract, Transform, and Load (ETL):
    - Extract: Extracts data from different sources
    - Transform: Data is cleansed, mapped, and transformed into specific format
    - Load: Transformed data is loaded into the target destination (file, database, data warehouse)
-![[public/posts/imgs/ch1-08-YK5FEBTW.webp]]
+![[posts/imgs/ch1-08-YK5FEBTW.webp]]
 - Data Types:
    - Unstructured Data: No schema + difficult to search
       - Resides in NoSQL databases / Data lakes

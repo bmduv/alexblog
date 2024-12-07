@@ -20,12 +20,12 @@ Data:
 
 Feature Engineering:
 - Video Features: Video ID -> Embedded, Duration, Language -> Embedded, Title -> Map to Feature Vector (BERT), Tags -> Map to Feature Vector (CBOW) ---> Concatenate
-![[public/posts/imgs/ch6-07-1-JV5OED2M.webp]]
+![[posts/imgs/ch6-07-1-JV5OED2M.webp]]
 - User Features: Categorize user features into following buckets: 1. User demographics 2. Contextual information 3. User historical interactions
 ![[public/posts/imgs/h6-08-1-PCWNBYAP.webp]]
 - Contextual Information: Time of Day, Device, Day of week
 - User Historical Interactions: Search history -> Map each search query into embedding vector and average all query embeddings, Liked videos -> Map into embedding vectors and average all embeddings, Watch videos and impressions -> Map into embedding vector and average
-![[ch6-10-1-JEQFGCK2 1.webp]]
+![[posts/imgs/ch6-10-1-JEQFGCK2 1.webp]]
 
 Model Development:
 - Feedback Matrix: Represents users' opinions about videos with rows being user and columns being videos
